@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+ <link rel="stylesheet" type="text/css" href="BSIC.css">
+</head>
+<body>
+
+  <div class="header">
+    <ul>
+      <li><a href="#Sobre" <p>Sobre</p></a></li>
+      <li><a href="#Palestrantes" <p>Palestrantes</p></a></li>
+      <li><a href="#Horario" <p>Horário</p> </a></li>
+      <li><a href="#Inscrição" <p>Inscrição</p> </a></li>
+      <li><a href="#Contato" <p>Contato</p> </a></li>
+    </ul>
+  </div>
+
+  <section class="welcome">
+    <div class="row text-left">
+      <ul>
+        <li><img src="etc/logo_transp.png"/ height="360" width="360"></li>
+        <li><h1>Brazilian<br>Science<br>in Context</h1></li>
+      </ul>
+    </div>
+    <a class="btn btn-primary" href="#Inscrição">Inscrição</a>
+  </section>
+
+<!-- <a href="#Palestrantes">Click Me to Smooth Scroll to Section 2 Below</a> -->
+
+<div class="palestrantes" id="Palestrantes">
+    <div class="row p0">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <h1>Palestrantes</h1>
+      </div>
+    </div>
+
+    <div class="row p1">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <img src="etc/nicolelis.png" height="250" width="250" />
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h4>Miguel Nicolelis</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah v Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <hr>
+
+    <div class="row p2">
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+        <h4 align="right">Miguel Nicolelis</h4>
+        <p align="right">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah v Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-2">
+        <img src="etc/nicolelis.png" height="250" width="250" />
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <hr>
+
+    <div class="row p3">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <img src="etc/nicolelis.png" height="250" width="250" />
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h4>Miguel Nicolelis</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah v Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <hr>
+
+    <div class="row p4">
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+        <h4 align="right">Miguel Nicolelis</h4>
+        <p align="right">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah v Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-2">
+        <img src="etc/nicolelis.png" height="250" width="250" />
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <div class="row less">
+      <div class="col-md-3" align="center">
+        <img src="etc/nicolelis.png" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-3" align="center">
+        <img src="etc/nicolelis.png" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-3" align="center">
+        <img src="etc/nicolelis.png" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-3" align="center">
+        <img src="etc/nicolelis.png" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+    </div>
+
+    <div class="space">
+      <h3> </h3>
+    </div>
+  </div>
+
+  <div class="Horario"id="Horario">
+    <div class="row p0">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <h1>Eventos</h1>
+      </div>
+    </div>
+
+    <div class="row p1">
+      <div class="col-md-4">
+        <table width="70%" align="center" >
+          <div id="head_nav">
+            <tr>
+              <th></th>
+              <th>Friday</th>
+            </tr>
+          </div>
+
+          <tr>
+            <th>4:00 - 6:00</th>
+            <td>Checkin and Refreshments</td>
+          </tr>
+
+          <tr>
+            <th>6:10 - 6:30</th>
+            <td>Cerimonia de Abertura</td>
+          </tr>
+
+          <tr>
+            <th>6:30 - 7:15</th>
+            <td>Primeria Keynote</td>
+          </tr>
+
+          <tr>
+            <th>7:30 - 9:00</th>
+            <td>Jantar e Networking</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <table width="70%" align="center" >
+          <div id="head_nav">
+            <tr>
+              <th></th>
+              <th>Saturday</th>
+            </tr>
+          </div>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Coisa 1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Coisa 2</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <table width="70%" align="center" >
+          <div id="head_nav">
+            <tr>
+              <th></th>
+              <th>Sunday</th>
+            </tr>
+          </div>
+
+          <tr>
+            <th>10:00 - 11:00</th>
+            <td>Physics-1</td>
+          </tr>
+
+          <tr>
+            <th>11:00 - 12:00</th>
+            <td>Math-2</td>
+          </tr>
+
+          <tr>
+            <th>12:00 - 01:00</th>
+            <td>Hindi</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="col-md-3">
+      <ul>
+        <li><img src="etc/twitter-512.png" width="30" height="30"></li>
+        <li><img src="etc/twitter-512.png" width="30" height="30"></li>
+        <li><img src="etc/twitter-512.png" width="30" height="30"></li>
+      </ul>
+    </div>
+    <div class="col-md-7"></div>
+    <div class="col-md-2">
+      <p>&copy; BSIC</p>
+    </div>
+  </footer>
+
+</body>
+</html>

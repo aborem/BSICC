@@ -1,0 +1,127 @@
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Raleway';
+  font-weight: 300;
+}
+
+.header {
+
+}
+.header ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 10px;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  background: rgba(30, 144, 255, 0.9);
+}
+.header li {
+  float: left;
+}
+.header li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.welcome {
+  background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;
+  height: 800px;
+  background-size: cover;
+}
+.welcome ul {
+  margin-top: 200px;
+  margin-left: 300px;
+  list-style-type: none;
+}
+.welcome li {
+  float: left;
+  width: 35%;
+  margin: auto;
+}
+.welcome h1 {
+  text-shadow: 2px 2px #000;
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+.welcome a {
+  margin-left: 650px;
+  font-size: 31px;
+  width: 150px;
+  height: 60px;
+}
+
+.btn.btn-primary {
+  border-radius: 5px;
+  border: 0px;
+}
+
+.palestrantes {
+  padding-top: 40px;
+  font-size: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+.palestrantes h1 {
+  color: #00B94A;
+}
+.p0 {
+  margin-bottom: 30px;
+}
+.less {
+  margin-top: 30px;
+}
+
+.active {
+  background-color: #009B3A;
+}
+
+.Horario {
+  padding-top: 40px;
+  background-color: #00B94A;
+  padding-bottom: 100px;
+}
+.Horario h1 {
+  color: #fff;
+}
+.Horario tr {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer {
+  padding-top: 40px;
+  background-color: #A0D5A9;
+  padding-bottom: 40px;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer li {
+  margin-right: 7px;
+  float: left;
+}
+
+
