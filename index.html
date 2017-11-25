@@ -3,10 +3,505 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Titillium+Web" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
 
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+      } // End if
+    });
+  });
+
+    function ov_on(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function ov_off(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onscroll = function() {
+      var nav = document.getElementById('Home');
+      if ( window.pageYOffset > 144 ) {
+          nav.style.background = "rgba(30, 144, 255, 0.9)";
+      } else {
+         nav.style.background = "rgba(30, 144, 255, 0)";
+      }
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="BSIC.css">
+</head>
 <body>
-	<h1>BSIC in progress...</h1>
+
+  <div class="header">
+    <ul id="Home">
+      <li><a href="#Sobre" <p>Sobre</p></a></li>
+      <li><a href="#Palestrantes_reg" <p>Palestrantes</p></a></li>
+      <li><a href="#Horario" <p>Horário</p> </a></li>
+      <li><a href="#Organizadores" <p>Organização</p> </a></li>
+      <li><a href="#Inscrição" <p>Inscrição</p> </a></li>
+      <li id="mail"><a href="mailto:bsicconference@gmail.com"><img src="etc/Mail-icon.png" width="17px" /></a></li>
+    </ul>
+  </div>
+
+  <section class="welcome">
+    <div class="row">
+      <!-- <div class="col-md-3">
+        <img id="bg" src="etc/Logo_transp.png" height="360" width="360">
+      </div> -->
+      <h1 align="center">Brazilian Science in Context</h1>
+    </div>
+      <p align="center">Precisamos colocar a ciência brasileira em contexto</p>
+    <div class="row" align="center" >
+      <a class="btn btn-primary" href="#Inscrição">Inscrição</a>
+    </div>
+  </section>
+
+  <div class="sobre" id="Sobre">
+    <div class="row p0">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <h1>Sobre</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <p>
+          Como alguém se torna um pesquisador de sucesso? Quais são os caminhos de carreira em pesquisa? Como se divulga ciência no Brasil? Como, mesmo com os inúmeros entraves, todo ano se faz ciência de altíssima qualidade no nosso país? Como se estimula o jovem estudante brasileiro a fazer ciência? E como podemos usar ciência para contribuir com o desenvolvimento do Brasil? <br><br>
+          <strong>Mais ainda, por que não estamos falando mais disso?</strong> <br><br>
+          Nenhuma dessas perguntas tem uma resposta clara. A falta de tal resposta e o desconhecimento de exemplos tangíveis para nossos estudantes cria algo que o brasileiro adora: mitos. Barreiras intransponíveis. O desistímulo nasce na falta de informação e o brasileiro acaba desconhecendo as suas mentes mais brilhantes. Acreditamos que temos que combater esse problema de todos os ângulos, desde o início da carreira acadêmica de estudante. Para isso, precisamos entender como proceder. <br><br>
+          Precisamos <strong>Colocar a Ciência Brasileira em Contexto</strong> <br><br>
+          A conferência Brazilian Science in Context propõe trazer os nossos pesquisadores de maior sucesso de todos os lugares to mundo para expor suas trajetórias e desafios para jovens estudantes de graduação que querem trabalhar com pesquisa.
+          Organizada por um time sonhador de estudantes brasileiros das universidades Brown, Columbia, Dartmouth, NYU e Yale, a conferência visa colocar em rota de colisão as ideias de estudantes com as de renomados cientistas, focando sempre em “como ir para frente”. A conferência terá três dias de eventos especialmente desenvolvidos para instigar uma discussão.
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <div id="nicolelis" onclick="ov_off('nicolelis')">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="etc/nic_card.jpg" style="height:100%">
+        </div>
+        <div class="col-md-6">
+          <h4><b>Miguel Nicolelis</b></h4> 
+          <p>Médico e cientista brasileiro, foi considerado um dos vinte maiores cientistas do mundo no começo da década passada pela revista <strong>Scientific American</strong>. Lidera um grupo de pesquisadores da área de Neurociência na Universidade Duke, no campo de fisiologia de órgãos e sistemas. Seu objetivo é integrar o cérebro humano com máquinas (interfaces cérebro-máquina). Suas pesquisas desenvolvem próteses neurais para a reabilitação de pacientes que sofrem de paralisia corporal. Nicolelis e sua equipe foram responsáveis pela descoberta de um sistema que possibilita a criação de braços robóticos controlados por meio de sinais cerebrais.</p>
+          <p id="info"><a href="mailto:nicoleli@neuro.duke.edu">contato</a> <a href="http://www.nicolelislab.net/">website</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mascarenhas" onclick="ov_off('mascarenhas')">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="etc/mas_card.jpg" align="center" width="250px">
+        </div>
+        <div class="col-md-6">
+          <h4><b>Sérgio Mascarenhas</b></h4> 
+          <p>Sérgio Mascarenhas é um físico-químico brasileiro que, além de ter pesquisas relevantes em diversas áreas, como na medicina, foi o responsável por trazer um grande desenvolvimento social, científico e tecnológico para o Brasil. Recebeu diversos prêmios como a Grã-Cruz da Ordem Nacional do Mérito Científico (2002). É professor visitante de algumas das principais universidades do mundo, como Princeton, Harvard e MIT, entre outras. Mascarenhas fundou o Instituto de Física de São Carlos, o Instituto de Estudos Avançados da USP, O Instituto de Pesquisas Adib Jatene e o Programa Internacional de Estudos e Projetos para a América Latina (PIEPAL).</p>
+          <p id="info"><a href="http://www.iea.usp.br/pessoas/pasta-pessoas/sergio-mascarenhas-oliveira">website</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="oliveira" onclick="ov_off('oliveira')">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="etc/oliveira.jpg" alt="Avatar" style="width:250px">
+        </div>
+        <div class="col-md-6">
+          <h4><b>Laura M. Oliveria</b></h4> 
+          <p>Formada em medicina pela Faculdade de Medicina da Universidade de São Paulo, desde jovem militou pelas causas políticas e sociais em que acredita. Nos Estados Unidos desde os anos 80, ela trabalhou como administradora do Centro de Neuroengenharia da Universidade Duke, se dedicando produzir ciência brasileira de mais alto nível e mentorar jovens cientistas do Brasil e do mundo todo.</p>
+          <p id="info"><a href="mailto:oliveira@neuro.duke.edu">contato</a> <a href="https://www.neuro.duke.edu/people/faculty/laura-m-oliveira">website</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alves" onclick="ov_off('alves')">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="etc/alves_card.jpg" style="width:250px">
+        </div>
+        <div class="col-md-6">
+          <h4><b>Debora Alves</b></h4> 
+          <p>Jovem empreendedora, durante o ensino médio, foi uma das poucas garotas brasileiras a representar o Brasil na Olimpíada Internacional de Matemática, a maior olimpíada de conhecimento. Formada em Ciência da Computação pela Universidade Harvard, acumulou experiências no Vale do Silício e voltou ao Brasil para trabalhar em sua Startup de tecnologia.</p>
+          <p id="info"><a href="https://www.linkedin.com/in/deborahhh/">website & contato</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="palestrantes" id="Palestrantes_reg">
+    <div class="row p0">
+      <div class="col-md-2">
+        <h1>Palestrantes</h1>
+      </div>
+    </div>
+
+    <div class="row p1">
+      <div class="col-md-6" align="center">
+        <img id="noclick" onclick="ov_on('nicolelis')" src="etc/nicolelis.png" height="350" width="350" />
+        <h4>Miguel Nicolelis</h4>
+      </div>
+      <div class="col-md-6" align="center">
+        <img id="noclick" onclick="ov_on('mascarenhas')" src="etc/mascarenhas.png" height="350" width="350" />
+        <h4>Sérgio Mascarenhas</h4>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row p2">
+      <div class="col-md-6" align="center">
+        <img id="noclick" onclick="ov_on('alves')" src="etc/alves.png" height="350" width="350" />
+        <h4>Deborah Alves</h4>
+      </div>
+      <div class="col-md-6" align="center">
+        <img id="noclick" onclick="ov_on('oliveira')" src="etc/oliveira.png" height="350" width="350" />
+        <h4>Laura M. Oliveria</h4>
+      </div>
+    </div>
+  </div>
+
+    <!-- <div class="row less">
+      <div class="col-md-3" align="center">
+        <img id="equipe_img" src="etc/equipe/.jpg" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-3" align="center">
+        <img id="equipe_img" src="etc/equipe/.jpg" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-3" align="center">
+        <img id="equipe_img" src="etc/equipe/.jpg" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+      <div class="col-md-3" align="center">
+        <img id="equipe_img" src="etc/equipe/.jpg" height="150" width="150" />
+        <h4>Mig Nic</h4>
+        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+      </div>
+    </div> -->
+    <br>
+  </div>
+
+  <div class="palestrantes" id="Palestrantes_mob">
+    <div class="row p0">
+      <div class="col-md-2">
+        <h1>Palestrantes</h1>
+      </div>
+    </div>
+
+    <div class="row p1">
+      <div class="col-md-6">
+        <h3>Miguel Nicolelis</h3>
+        <p>Médico e cientista brasileiro, foi considerado um dos vinte maiores cientistas do mundo no começo da década passada pela revista <strong>Scientific American</strong>.
+        Lidera um grupo de pesquisadores da área de Neurociência na Universidade Duke, no campo de fisiologia de órgãos e sistemas. Seu objetivo é integrar o cérebro humano com máquinas (interfaces cérebro-máquina). Suas pesquisas desenvolvem próteses neurais para a reabilitação de pacientes que sofrem de paralisia corporal. Nicolelis e sua equipe foram responsáveis pela descoberta de um sistema que possibilita a criação de braços robóticos controlados por meio de sinais cerebrais.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row p1">
+      <div class="col-md-6">
+        <h3>Sérgio Mascarenhas</h3>
+        <p>Sérgio Mascarenhas é um físico-químico brasileiro que, além de ter pesquisas relevantes em diversas áreas, como na medicina, foi o responsável por trazer um grande desenvolvimento social, científico e tecnológico para o Brasil. Recebeu diversos prêmios como a Grã-Cruz da Ordem Nacional do Mérito Científico (2002). É professor visitante de algumas das principais universidades do mundo, como Princeton, Harvard e MIT, entre outras. Mascarenhas fundou o Instituto de Física de São Carlos, o Instituto de Estudos Avançados da USP, O Instituto de Pesquisas Adib Jatene e o Programa Internacional de Estudos e Projetos para a América Latina (PIEPAL).</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row p1">
+      <div class="col-md-6">
+        <h3>Deborah Alves</h3>
+        <p>Jovem empreendedora, durante o ensino médio, foi uma das poucas garotas brasileiras a representar o Brasil na Olimpíada Internacional de Matemática, a maior olimpíada de conhecimento. Formada em Ciência da Computação pela Universidade Harvard, acumulou experiências no Vale do Silício e voltou ao Brasil para trabalhar em sua Startup de tecnologia.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row p1">
+      <div class="col-md-6">
+        <h3>Laura M. Oliveria</h3>
+        <p>Formada em medicina pela Faculdade de Medicina da Universidade de São Paulo, desde jovem militou pelas causas políticas e sociais em que acredita. Nos Estados Unidos desde os anos 80, ela trabalhou como administradora do Centro de Neuroengenharia da Universidade Duke, se dedicando produzir ciência brasileira de mais alto nível e mentorar jovens cientistas do Brasil e do mundo todo.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="Horario" id="Horario">
+    <div class="row p0">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <h1>Horário</h1>
+      </div>
+    </div>
+    <div class="row p1">
+      <div class="col-md-1"></div>
+      <div class="col-md-3"><h3>Sexta</h3></div>
+      <div class="col-md-3"><h3>Sábado</h3></div>
+      <div class="col-md-3"><h3>Domingo</h3></div>
+      <div class="col-md-2"></div>
+    </div>
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-1"><p id="time">04:00pm-06:00pm</p></div>
+      <div class="col-md-2"><p>Checkin e Recepção</p></div>
+      <div class="col-md-1"><p id="time">08:30am-09:00am</p></div>
+      <div class="col-md-2"><p>Café da Manhã</p></div>
+      <div class="col-md-1"><p id="time">09:00am-10:00am</p></div>
+      <div class="col-md-2"><p>Café da Manhã e Networking</p></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-1"><p id="time">06:10pm-06:30pm</p></div>
+      <div class="col-md-2"><p>Cerimônia de Abertura</p></div>
+      <div class="col-md-1"><p id="time">09:05am-10:30am</p></div>
+      <div class="col-md-2"><p>A Interface entre Ciência e Arte</p></div>
+      <div class="col-md-1"><p id="time">10:00am-11:00am</p></div>
+      <div class="col-md-2"><p><b>Keynote</b> Miguel Nicolelis</p></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-1"><p id="time">06:30pm-07:15pm</p></div>
+      <div class="col-md-2"><p>Keynote 1</p></div>
+      <div class="col-md-1"><p id="time">10:30am-11:45am</p></div>
+      <div class="col-md-2"><p>Painel 1: Educação Científica/<br>
+                               Painel 2: Ciência Empreendedora/<br>
+                               Painel 3: Ultima Fronteira</p></div>
+      <div class="col-md-1"><p id="time">11:00am-11:30am</p></div>
+      <div class="col-md-2"><p>Apresentação da Organização</p></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-1"><p id="time">07:30pm-09:00pm</p></div>
+      <div class="col-md-2"><p>Jantar e Networking</p></div>
+      <div class="col-md-1"><p id="time">12:00pm-02:00pm</p></div>
+      <div class="col-md-2"><p>Almoço e Mesas Redondas</p></div>
+      <div class="col-md-1"><p id="time">12:00pm</p></div>
+      <div class="col-md-2"><p>Cerimônia de Encerramento</p></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><p id="time">02:15pm-03:30pm</p></div>
+      <div class="col-md-2"><p>Painel 4: Ciência Empreendedora<br>
+                               Painel 5: Manifesto Ciência Tropical<br>
+                               Painel 6: Mulheres na Ciência</p></div>
+      <div class="col-md-4"></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><p id="time">03:30pm-04:00pm</p></div>
+      <div class="col-md-2"><p>Coffee Break</p></div>
+      <div class="col-md-4"></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><p id="time">04:30pm-06:00pm</p></div>
+      <div class="col-md-2"><p>Feira de Carreiras e Pesquisa</p></div>
+      <div class="col-md-4"></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><p id="time">06:00pm-06:30pm</p></div>
+      <div class="col-md-2"><p>Keynote: Melhores Projetos</p></div>
+      <div class="col-md-4"></div>
+    </div>
+    <hr width="81%">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><p id="time">06:30pm-08:30pm</p></div>
+      <div class="col-md-2"><p>Jantar e Networking</p></div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+
+  <div class="palestrantes" id="Organizadores">
+    <div class="row p0">
+      <div class="col-md-2">
+        <h1>Organização</h1>
+      </div>
+    </div>
+
+    <div class="row p0">
+      <div class="col-md-4">
+        <h2>Comitê Executivo</h2>
+      </div>
+    </div>
+
+    <div class="row less">
+      <div class="col-md-4" align="center">
+        <img src="etc/mat.png" height="220" width="220" />
+        <h4>Mateus Picanço</h4>
+        <p>Diretor Executivo <br>Brown University '18 - Engenharia Elétrica</p>
+      </div>
+      <div class="col-md-4" align="center">
+        <img src="etc/bea_sil.png" height="220" width="220" />
+        <h4>Beatriz Arruda</h4>
+        <p>Diretor de Logística <br>Brown University '19 - Neurociência</p>
+      </div>
+      <div class="col-md-4" align="center">
+        <img src="etc/bea_via.png" height="220" width="220" />
+        <h4>Beatriz Vianna</h4>
+        <p>Diretora de Finanças <br>Brown University '18 - Economia</p>
+      </div>
+    </div>
+    <div class="row less">
+      <div class="col-md-2"></div>
+      <div class="col-md-4" align="center">
+        <img src="etc/arthur.png" height="220" width="220" />
+        <h4>Arthur Borém</h4>
+        <p>Diretor de Tecnología <br>Brown University '20 - Ciência da Computação</p>
+      </div>
+      <div class="col-md-4" align="center">
+        <img src="etc/sayuri.png" height="220" width="220" />
+        <h4>Sayuri Magnabosco</h4>
+        <p>Diretora de Conteúdo <br>Dartmouth University '21 - Engenharia Biomédica</p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <hr>
+
+    <div class="row p0">
+      <div class="col-md-2">
+        <h2>Equipe</h2>
+      </div>
+    </div>
+
+    <div class="container" id="equipe">
+      <ul>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/amanda.jpeg" height="130" width="130" />
+          <h4>Amanda Castanho</h4>
+          <p>The New School of Design - Fashion Design</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/caroline.png" height="130" width="130" />
+          <h4>Caroline Magalhães</h4>
+          <p>Columbia University '21 - Neurociência</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/cintia.jpeg" height="130" width="130" />
+          <h4>Cíntia Araújo</h4>
+          <p>Brown University '21 - Ciência da Computação</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/edu.jpeg" height="130" width="130" />
+          <h4>Eduardo Leal</h4>
+          <p>Yale University '21 - Química e Psicologia</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/gabic.jpeg" height="130" width="130" />
+          <h4>Gabriela Campos</h4>
+          <p>Brown University '19 - Neurociência Cognitiva</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/gabir.png" height="130" width="130" />
+          <h4>Gabriela Ripper</h4>
+          <p>Brown University '19 - Psicologia e Literatura Comparada</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/luana.png" height="130" width="130" />
+          <h4>Luana Mattos</h4>
+          <p>Brown University '21 - Neurociência Cognitiva</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/luiza.png" height="130" width="130" />
+          <h4>Luiza Silva</h4>
+          <p>Brown University '18 - Arqueologia e Egiptologia</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/paulat.png" height="130" width="130" />
+          <h4>Paula Torres</h4>
+          <p>New York University '19 - Psicologia</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/pauline.png" height="130" width="130" />
+          <h4>Pauline Siviero</h4>
+          <p>Brown University '19 - Ciência da Computação</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/pedro.jpeg" height="130" width="130" />
+          <h4>Pedro Paulo Maia</h4>
+          <p>Brown University '19 - Economía e Estatística</p>
+        </li>
+        <li align="center">
+          <img id="equipe_img" src="etc/equipe/raf.png" height="130" width="130" />
+          <h4>Rafael Lippert</h4>
+          <p>Brown University '21 - Neurociência</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="space">
+      <h3> </h3>
+    </div>
+  </div>
+
+  <div class="sobre" id="Inscrição">
+    <div class="row p0">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <h1>Inscrição</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <p>Em breve</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-7"></div>
+    <div class="col-md-2">
+      <p>&copy; BSIC</p>
+    </div>
+  </div>
+
 </body>
+</html>
