@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<form id='contact_form' method="POST" action="http://formspree.io/arthurborem@gmail.com">
+	<!-- <form id='contact_form' method="POST" action="http://formspree.io/arthurborem@gmail.com">
 		<div class="form-row">
 			<div class="col-md-4 mb-3">
 				<label for="validationDefault01">First name</label>
@@ -44,11 +44,16 @@
 				<input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
 			</div>
 		</div>
-		<!-- <div class="custom-file">
+		<div class="custom-file">
 			<input type="file" class="custom-file-input" id="customFile">
 			<label class="custom-file-label" for="customFile">Choose file</label>
-		</div> -->
+		</div>
 		<button class="btn btn-primary" type="submit">Submit form</button>
+	</form> -->
+	<form method="POST" action="http://formspree.io/arthurborem@gmail.com">
+		<input type="email" name="email" placeholder="Your email">
+		<textarea name="message" placeholder="Your message"></textarea>
+		<button type="submit">Send</button>
 	</form>
 </body>
 </html>
