@@ -88,13 +88,13 @@ body {
   width: 150px;
   height: 60px;
 }
-.btn.btn-primary {
+#buttoon {
   border-radius: 15px;
   margin-top: 220px;
   background: transparent;
   border: 2px solid white;
 }
-.btn.btn-primary:hover {
+#buttoon:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -255,7 +255,24 @@ P A L E S T R A N T E S  S C R E E N
           I N S C R I Ç A O
 -------------------------------------
 */
+.form__container {
+  background: rgba(255,255,255,0.8);
+  margin: 0 auto;
+  margin-top: 4px;
+  padding: 20px;
+  border-radius: 4px;
+}
 
+.gutter {
+	height: 32px;
+}
+
+@media(max-width:767px){
+  .form__container {
+    margin: 0;
+    padding: 16px;
+  }
+}
 /*
 -------------------------------------
             F O O T E R
