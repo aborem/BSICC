@@ -6,23 +6,23 @@
 */
 
 html { 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 #regular {
-  display: block;
+	display: block;
 }
 
 .row {
-  margin-right: 0;
-  margin-left: 0;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 /*
@@ -31,31 +31,31 @@ body {
 -------------------------------------
 */
 .header ul {
-  z-index: 1;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
-  padding-right: 10px;
-  top: 0;
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-  height: 60px;
+	z-index: 1;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	padding-right: 10px;
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 60px;
 }
 .header li {
-  float: left;
+	float: left;
 }
 .header li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 #mail {
-  margin-top: -3px;
-  float: right;
+	margin-top: -3px;
+	float: right;
 }
 
 /*
@@ -64,38 +64,39 @@ body {
 -------------------------------------
 */
 .welcome {
-  background: url('etc/b2.png') no-repeat center center fixed;
-  height: 900px;
-  background-size: cover;
+	background: url('etc/b2.png') no-repeat center center fixed;
+	/*background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;*/
+	height: 900px;
+	background-size: cover;
 }
 .welcome h1 {
-  text-shadow: 2px 2px #000;
-  font-size: 90px;
-  font-weight: 700;
-  color: #fff;
-  margin-top: 300px;
+	text-shadow: 2px 2px #000;
+	font-size: 90px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 10px; /*Used to be 270*/
 }
 .welcome p {
-  /*text-shadow: 2px 2px #000;*/
-  font-size: 20px;
-  color: #fff;
+	/*text-shadow: 2px 2px #000;*/
+	font-size: 20px;
+	color: #fff;
 }
-#bg {
-  margin-top: 200px;
+.welcome img {
+	margin-top: 100px;
 }
 .welcome a {
-  font-size: 31px;
-  width: 150px;
-  height: 60px;
+	font-size: 31px;
+	width: 150px;
+	height: 60px;
 }
 #buttoon {
-  border-radius: 15px;
-  margin-top: 220px;
-  background: transparent;
-  border: 2px solid white;
+	border-radius: 15px;
+	margin-top: 130px;
+	background: transparent;
+	border: 2px solid white;
 }
 #buttoon:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /*
@@ -104,18 +105,18 @@ body {
 -------------------------------------
 */
 .sobre {
-  background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;
-  padding-top: 40px;
-  margin: auto;
-  background-size: cover;
-  padding-bottom: 40px;
+	background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;
+    padding-top: 40px;
+	margin: auto;
+	background-size: cover;
+	padding-bottom: 40px;
 }
 .sobre h1, #sobre_h2 {
-  color: #fff;
+	color: #fff;
 }
 .sobre p {
-  color: #fff;
-  font-size: 22px;
+	color: #fff;
+	font-size: 22px;
 }
 #apoio {
 	padding-top: 30px;
@@ -135,53 +136,53 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 #Palestrantes_mob {
-  display: none;
+	display: none;
 }
 
 .palestrantes {
-  padding-top: 40px;
-  font-size: 20px;
-  margin: auto;
-  max-width: 1200px;
+	padding-top: 40px;
+	font-size: 20px;
+	margin: auto;
+	max-width: 1200px;
 }
 .palestrantes h1 {
-  color: #00B94A;
+	color: #00B94A;
 }
 .palestrantes h4 {
-  font-size: 20px;
+	font-size: 20px;
 }
 .palestrantes p {
-  font-size: 10px;
+	font-size: 10px;
 }
 .palestrantes p {
-  margin-right: 30px;
-  margin-left: 30px;
-  font-size: 15px;
+	margin-right: 30px;
+	margin-left: 30px;
+	font-size: 15px;
 }
 .p0 {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 #equipe {
-  margin-top: 30px;
-  width: 80vw;
-  overflow: auto;
-  display: block;
-  white-space: nowrap;
+	margin-top: 30px;
+	width: 80vw;
+	overflow: auto;
+	display: block;
+	white-space: nowrap;
 }
 .container ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 .container li {
-  display: inline-block;
-  margin-right: -20px;
+	display: inline-block;
+	margin-right: -20px;
 }
 #noclick {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 180px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 180px;
 }
 #noclick:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-  cursor:pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+	cursor:pointer;
 }
 
 /*
@@ -190,45 +191,45 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 #nicolelis, #mascarenhas, #oliveira, #alves {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
-  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+	z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 750px;
-  margin: auto;
-  margin-top: 7%;
-  transition: 0.3s;
-  background-color: white;
-  padding-right: 200px;
-  border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	width: 750px;
+	margin: auto;
+	margin-top: 7%;
+	transition: 0.3s;
+	background-color: white;
+	padding-right: 200px;
+	border-radius: 10px;
 }
 .card h4 {
-  padding-top: 20px;
-  font-size: 25px;
-  padding-bottom: 5px;
+	padding-top: 20px;
+	font-size: 25px;
+	padding-bottom: 5px;
 }
 .card p {
-  width: 430px;
-  font-size: 16px;
+	width: 430px;
+	font-size: 16px;
 }
 .card img {
-  margin-left: -20px;
-  overflow: hidden;
+	margin-left: -20px;
+	overflow: hidden;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /*
@@ -237,21 +238,21 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 .Horario {
-  padding-top: 40px;
-  background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;
-  padding-bottom: 100px;
-  background-size: cover;
+	padding-top: 40px;
+	background: url('etc/b2.png') no-repeat center center fixed;
+	padding-bottom: 100px;
+	background-size: cover;
 }
 .Horario h1 {
-  color: #fff;
+	color: #fff;
 }
 .Horario h3 {
-  color: white;
-  font-size: 27px;
+	color: white;
+	font-size: 27px;
 }
 .Horario p {
-  color: white;
-  font-size: 18px;
+	color: white;
+	font-size: 18px;
 }
 
 /*
@@ -260,7 +261,7 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 #equipe_img {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 /*
@@ -269,29 +270,29 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 .inscricao {
-  background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;
-  padding-top: 40px;
-  margin: auto;
-  background-size: cover;
-  padding-bottom: 40px;
+	background: url('etc/o-BROWN-UNIVERSITY-facebook.jpg') no-repeat center center fixed;
+	padding-top: 40px;
+	margin: auto;
+	background-size: cover;
+	padding-bottom: 40px;
 }
 .inscricao h1 {
-  color: #fff;
+	color: #fff;
 }
 .inscricao h2 {
 	color: #333;
 }
 .inscricao p {
-  color: #fff;
-  font-size: 22px;
+	color: #fff;
+	font-size: 22px;
 }
 .form__container {
-  background: rgba(255,255,255,0.8);
-  margin: 0 auto;
-  margin-top: 4px;
-  padding: 20px;
-  border-radius: 4px;
-  background-size: cover;
+	background: rgba(255,255,255,0.8);
+	margin: 0 auto;
+	margin-top: 4px;
+	padding: 20px;
+	border-radius: 4px;
+	background-size: cover;
 
 }
 
@@ -300,10 +301,10 @@ P A L E S T R A N T E S  S C R E E N
 }
 
 @media(max-width:767px){
-  .form__container {
-    margin: 0;
-    padding: 16px;
-  }
+	.form__container {
+		margin: 0;
+		padding: 16px;
+	}
 }
 /*
 -------------------------------------
@@ -311,9 +312,9 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 .footer {
-  padding-top: 20px;
-  background: rgba(30, 144, 255, 0.9);
-  padding-bottom: 40px;
+	padding-top: 20px;
+	background: rgba(30, 144, 255, 0.9);
+	padding-bottom: 40px;
 }
 .footer a {
 	color: #333334;
@@ -327,29 +328,29 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 @media (max-width: 1000px) {
-  .welcome {
-    display: none;
-  }
+	.welcome {
+		display: none;
+	}
 
-  #sob {
-    display: none;
-  }
+	#sob {
+		display: none;
+	}
 
-  #Palestrantes_reg {
-    display: none;
-  }
+	#Palestrantes_reg {
+		display: none;
+	}
 
-  #Palestrantes_mob {
-    display: block;
-  }
+	#Palestrantes_mob {
+		display: block;
+	}
 
-  .palestrantes img {
-    display: none;
-  }
+	.palestrantes img {
+		display: none;
+	}
 
-  .Horario h1 {
-    margin-left: 0;
-    color: #fff;
-  }
+	.Horario h1 {
+		margin-left: 0;
+		color: #fff;
+	}
 }
 
