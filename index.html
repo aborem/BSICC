@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Titillium+Web" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>BSiC</title>
 	<script>
@@ -34,13 +35,13 @@
   });
 });
 
-		function ov_on(id) {
-			document.getElementById(id).style.display = "block";
-		}
+		// function ov_on(id) {
+		// 	document.getElementById(id).style.display = "block";
+		// }
 
-		function ov_off(id) {
-			document.getElementById(id).style.display = "none";
-		}
+		// function ov_off(id) {
+		// 	document.getElementById(id).style.display = "none";
+		// }
 
 		window.onscroll = function() {
 			var nav = document.getElementById('Home');
@@ -150,76 +151,64 @@
 		</div>
 	</div>
 
-	<div id="nicolelis" onclick="ov_off('nicolelis')">
-		<div class="card">
-			<div class="row">
-				<div class="col-md-6">
-					<img src="etc/nic_card.jpg" style="height:100%">
-				</div>
-				<div class="col-md-6">
-					<h4><b>Miguel Nicolelis</b></h4> 
-					<p>Médico e cientista brasileiro, foi considerado um dos vinte maiores cientistas do mundo no começo da década passada pela revista <strong>Scientific American</strong>. Lidera um grupo de pesquisadores da área de Neurociência na Universidade Duke, no campo de fisiologia de órgãos e sistemas. Seu objetivo é integrar o cérebro humano com máquinas (interfaces cérebro-máquina). Suas pesquisas desenvolvem próteses neurais para a reabilitação de pacientes que sofrem de paralisia corporal. Nicolelis e sua equipe foram responsáveis pela descoberta de um sistema que possibilita a criação de braços robóticos controlados por meio de sinais cerebrais.</p>
-					<p id="info"><a href="mailto:nicoleli@neuro.duke.edu">contato</a> <a href="http://www.nicolelislab.net/">website</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="mascarenhas" onclick="ov_off('mascarenhas')">
-		<div class="card">
-			<div class="row">
-				<div class="col-md-6">
-					<img src="etc/mas_card.jpg" align="center" width="250px">
-				</div>
-				<div class="col-md-6">
-					<h4><b>Sérgio Mascarenhas</b></h4> 
-					<p>Sérgio Mascarenhas é um físico-químico brasileiro que, além de ter pesquisas relevantes em diversas áreas, como na medicina, foi o responsável por trazer um grande desenvolvimento social, científico e tecnológico para o Brasil. Recebeu diversos prêmios como a Grã-Cruz da Ordem Nacional do Mérito Científico (2002). É professor visitante de algumas das principais universidades do mundo, como Princeton, Harvard e MIT, entre outras. Mascarenhas fundou o Instituto de Física de São Carlos, o Instituto de Estudos Avançados da USP, O Instituto de Pesquisas Adib Jatene e o Programa Internacional de Estudos e Projetos para a América Latina (PIEPAL).</p>
-					<p id="info"><a href="http://www.iea.usp.br/pessoas/pasta-pessoas/sergio-mascarenhas-oliveira">website</a></p>
+	<div class="modal fade" id="mello_modal" role="dialog">
+		<div class="modal-dialog">
+			<div id="mello">
+				<div class="card">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="etc/mello_card.jpg" alt="Avatar" style="width:250px">
+						</div>
+						<div class="col-md-6">
+							<h4><b>Duília de Mello</b></h4> 
+							<p>Duilia de Mello é um dos nomes mais conhecidos da ciência brasileira no Exterior. Graduada em Astronomia pela Universidade Federal do Rio de Janeiro (UFRJ), em 1985, Mestre pelo Instituto de Pesquisas Espaciais (INPE), em 1988, doutora pela USP, em 1995, é professora de Física e Astronomia na Universidade Católica de Washington. Autora do livro Vivendo com as Estrelas, publicado pela Editora Panda Books, e de mais de 100 artigos científicos, Duilia também é pesquisadora associada do Goddard Space Flight Center, da NASA. Entre suas principais descobertas estão a Supernova 1997D e as Bolhas Azuis. Ela foi escolhida como uma das 10 mulheres que mudam o Brasil pelo Barnard College/Columbia University em 2013 e recebeu o Prêmio Profissional do ano de 2013 da Diáspora Brasil-Ministério de Relações Exteriores e Ministério da Indústria e Comércio/ABDI. Foi escolhida pela Revista Época como uma das 100 pessoas mais influentes do Brasil em 2014.</p>
+							<p id="info"><a href="mailto:demello@cua.edu">contato</a> <a href="http://duiliademello.com/">website</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="oliveira" onclick="ov_off('oliveira')">
-		<div class="card">
-			<div class="row">
-				<div class="col-md-6">
-					<img src="etc/oliveira.jpg" alt="Avatar" style="width:250px">
-				</div>
-				<div class="col-md-6">
-					<h4><b>Laura M. Oliveria</b></h4> 
-					<p>Formada em medicina pela Faculdade de Medicina da Universidade de São Paulo, desde jovem militou pelas causas políticas e sociais em que acredita. Nos Estados Unidos desde os anos 80, ela trabalhou como administradora do Centro de Neuroengenharia da Universidade Duke, se dedicando produzir ciência brasileira de mais alto nível e mentorar jovens cientistas do Brasil e do mundo todo.</p>
-					<p id="info"><a href="mailto:oliveira@neuro.duke.edu">contato</a> <a href="https://www.neuro.duke.edu/people/faculty/laura-m-oliveira">website</a></p>
+	<div class="modal fade" id="oliveira_modal" role="dialog">
+		<div class="modal-dialog">
+			<div id="oliveira">
+				<div class="card">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="etc/oliveira.jpg" alt="Avatar" style="width:250px">
+						</div>
+						<div class="col-md-6">
+							<h4><b>Laura M. Oliveria</b></h4> 
+							<p>Formada em medicina pela Faculdade de Medicina da Universidade de São Paulo, desde jovem militou pelas causas políticas e sociais em que acredita. Nos Estados Unidos desde os anos 80, ela trabalhou como administradora do Centro de Neuroengenharia da Universidade Duke, se dedicando produzir ciência brasileira de mais alto nível e mentorar jovens cientistas do Brasil e do mundo todo.</p>
+							<p id="info"><a href="mailto:oliveira@neuro.duke.edu">contato</a> <a href="https://www.neuro.duke.edu/people/faculty/laura-m-oliveira">website</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="alves" onclick="ov_off('alves')">
-		<div class="card">
-			<div class="row">
-				<div class="col-md-6">
-					<img src="etc/alves_card.jpg" style="width:250px">
-				</div>
-				<div class="col-md-6">
-					<h4><b>Debora Alves</b></h4> 
-					<p>Jovem empreendedora, durante o ensino médio, foi uma das poucas garotas brasileiras a representar o Brasil na Olimpíada Internacional de Matemática, a maior olimpíada de conhecimento. Formada em Ciência da Computação pela Universidade Harvard, acumulou experiências no Vale do Silício e voltou ao Brasil para trabalhar em sua Startup de tecnologia.</p>
-					<p id="info"><a href="https://www.linkedin.com/in/deborahhh/">website & contato</a></p>
+	<div class="modal fade" id="mascarenhas_modal" role="dialog">
+		<div class="modal-dialog">
+			<div id="mascarenhas">
+				<div class="card">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="etc/mas_card.jpg" align="center" width="250px">
+						</div>
+						<div class="col-md-6">
+							<h4><b>Sérgio Mascarenhas</b></h4> 
+							<p>Sérgio Mascarenhas é um físico-químico brasileiro que, além de ter pesquisas relevantes em diversas áreas, como na medicina, foi o responsável por trazer um grande desenvolvimento social, científico e tecnológico para o Brasil. Recebeu diversos prêmios como a Grã-Cruz da Ordem Nacional do Mérito Científico (2002). É professor visitante de algumas das principais universidades do mundo, como Princeton, Harvard e MIT, entre outras. Mascarenhas fundou o Instituto de Física de São Carlos, o Instituto de Estudos Avançados da USP, O Instituto de Pesquisas Adib Jatene e o Programa Internacional de Estudos e Projetos para a América Latina (PIEPAL).</p>
+							<p id="info"><a href="http://www.iea.usp.br/pessoas/pasta-pessoas/sergio-mascarenhas-oliveira">website</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="palestrantes" id="Palestrantes_reg">
-<!-- 		1. Duília de Melo
-
-		2. José N. Onuchic
-
-		3. Sérgio Mascarenhas
-
-		4. Laura Oliveira
-
-		5. Taciana Pereira -->
 		<div class="row p0">
 			<div class="col-md-1"></div>
 			<div class="col-md-2">
@@ -228,27 +217,32 @@
 		</div>
 
 		<div class="row p1">
-			<div class="col-md-6" align="center">
-				<img id="noclick" onclick="ov_on('nicolelis')" src="etc/nicolelis.png" height="350" width="350" />
-				<h4>Miguel Nicolelis</h4>
+			<div class="col-md-1"></div>
+			<div class="col-md-2" align="center">
+				<!-- <img id="noclick" data-toggle="modal" data-target="#mello_modal" src="etc/mello.png" height="200" width="200" /> -->
+				<img src="etc/mello.png" height="200" width="200" />
+				<h4>Duília de Mello</h4>
 			</div>
-			<div class="col-md-6" align="center">
-				<img id="noclick" onclick="ov_on('mascarenhas')" src="etc/mascarenhas.png" height="350" width="350" />
-				<h4>Sérgio Mascarenhas</h4>
+			<div class="col-md-2" align="center">
+				<!-- <img id="noclick" data-toggle="modal" data-target="#oliveira_modal" src="etc/oliveira.png" height="200" width="200" /> -->
+				<img src="etc/onuchic.png" height="200" width="200" />
+				<h4>José Onuchic</h4>
 			</div>
-		</div>
-
-		<hr>
-
-		<div class="row p2">
-			<div class="col-md-6" align="center">
-				<img id="noclick" onclick="ov_on('alves')" src="etc/alves.png" height="350" width="350" />
-				<h4>Deborah Alves</h4>
-			</div>
-			<div class="col-md-6" align="center">
-				<img id="noclick" onclick="ov_on('oliveira')" src="etc/oliveira.png" height="350" width="350" />
+			<div class="col-md-2" align="center">
+				<!-- <img id="noclick" data-toggle="modal" data-target="#oliveira_modal" src="etc/oliveira.png" height="200" width="200" /> -->
+				<img src="etc/oliveira.png" height="200" width="200" />
 				<h4>Laura M. Oliveria</h4>
 			</div>
+			<div class="col-md-2" align="center">
+				<!-- <img id="noclick" data-toggle="modal" data-target="#mascarenhas_modal" src="etc/mascarenhas.png" height="200" width="200" /> -->
+				<img src="etc/mascarenhas.png" height="200" width="200" />
+				<h4>Sérgio Mascarenhas</h4>
+			</div>
+			<div class="col-md-2" align="center">
+				<img src="etc/pereira.png" height="200" width="200" />
+				<h4>Taciana Pereira</h4>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
 	</div>
 	<br>
@@ -315,7 +309,7 @@
 	<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-1"><p id="time">8:00-9:00</p></div>
-		<div class="col-md-2"><p>Café da Manhã e </p></div>
+		<div class="col-md-2"><p>Café da Manhã e Credenciamento</p></div>
 		<div class="col-md-1"><p id="time">9:00-10:00</p></div>
 		<div class="col-md-2"><p>Café da Manhã e Networking</p></div>
 	</div>
@@ -391,35 +385,32 @@
 	</div>
 
 	<div class="row less">
-		<div class="col-md-4" align="center">
-			<img src="etc/mat.png" height="220" width="220" />
+		<div class="col-md-1"></div>
+		<div class="col-md-2" align="center">
+			<img src="etc/mat.png" height="180" width="180" />
 			<h4>Mateus Picanço</h4>
-			<p>Diretor Executivo <br>Brown University '18 - Engenharia Elétrica</p>
+			<p>Diretor Executivo <br>Brown University '18  Engenharia Elétrica</p>
 		</div>
-		<div class="col-md-4" align="center">
-			<img src="etc/bea_sil.png" height="220" width="220" />
+		<div class="col-md-2" align="center">
+			<img src="etc/bea_sil.png" height="180" width="180" />
 			<h4>Beatriz Arruda</h4>
-			<p>Diretor de Logística <br>Brown University '19 - Neurociência</p>
+			<p>Diretor de Logística <br>Brown University '19  Neurociência</p>
 		</div>
-		<div class="col-md-4" align="center">
-			<img src="etc/bea_via.png" height="220" width="220" />
+		<div class="col-md-2" align="center">
+			<img src="etc/bea_via.png" height="180" width="180" />
 			<h4>Beatriz Vianna</h4>
-			<p>Diretora de Finanças <br>Brown University '18 - Economia</p>
+			<p>Diretora de Finanças <br>Brown University '18  Economia</p>
 		</div>
-	</div>
-	<div class="row less">
-		<div class="col-md-2"></div>
-		<div class="col-md-4" align="center">
-			<img src="etc/arthur.png" height="220" width="220" />
+		<div class="col-md-2" align="center">
+			<img src="etc/arthur.png" height="180" width="180" />
 			<h4>Arthur Borém</h4>
-			<p>Diretor de Tecnología <br>Brown University '20 - Ciência da Computação</p>
+			<p>Diretor de Tecnología <br>Brown University '20  Ciência da Computação</p>
 		</div>
-		<div class="col-md-4" align="center">
-			<img src="etc/sayuri.png" height="220" width="220" />
+		<div class="col-md-2" align="center">
+			<img src="etc/sayuri.png" height="180" width="180" />
 			<h4>Sayuri Magnabosco</h4>
-			<p>Diretora de Conteúdo <br>Dartmouth University '21 - Engenharia Biomédica</p>
+			<p>Diretora de Conteúdo <br>Dartmouth University '21  Engenharia Biomédica</p>
 		</div>
-		<div class="col-md-2"></div>
 	</div>
 
 	<hr>
@@ -432,68 +423,71 @@
 	</div>
 
 	<div class="container" id="equipe">
-		<ul>
-			<li align="center">
+		<div class="row">
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/amanda.jpeg" height="130" width="130" />
 				<h4>Amanda Castanho</h4>
-				<p>The New School of Design - Fashion Design</p>
-			</li>
-			<li align="center">
+				<p>The New School of Design <br /> Fashion Design</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/caroline.png" height="130" width="130" />
 				<h4>Caroline Magalhães</h4>
-				<p>Columbia University '21 - Neurociência</p>
-			</li>
-			<li align="center">
+				<p>Columbia University '21 <br /> Neurociência</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/cintia.jpeg" height="130" width="130" />
 				<h4>Cíntia Araújo</h4>
-				<p>Brown University '21 - Ciência da Computação</p>
-			</li>
-			<li align="center">
+				<p>Brown University '21 <br /> Ciência da Computação</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/edu.jpeg" height="130" width="130" />
 				<h4>Eduardo Leal</h4>
-				<p>Yale University '21 - Química e Psicologia</p>
-			</li>
-			<li align="center">
+				<p>Yale University '21 <br /> Química e Psicologia</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/gabic.jpeg" height="130" width="130" />
 				<h4>Gabriela Campos</h4>
-				<p>Brown University '19 - Neurociência Cognitiva</p>
-			</li>
-			<li align="center">
+				<p>Brown University '19 <br /> Neurociência Cognitiva</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/gabir.png" height="130" width="130" />
 				<h4>Gabriela Ripper</h4>
-				<p>Brown University '19 - Psicologia e Literatura Comparada</p>
-			</li>
-			<li align="center">
+				<p>Brown University '19 <br /> Psicologia e Literatura Comparada</p>
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/luana.png" height="130" width="130" />
 				<h4>Luana Mattos</h4>
-				<p>Brown University '21 - Neurociência Cognitiva</p>
-			</li>
-			<li align="center">
+				<p>Brown University '21 <br /> Neurociência Cognitiva</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/luiza.png" height="130" width="130" />
 				<h4>Luiza Silva</h4>
-				<p>Brown University '18 - Arqueologia e Egiptologia</p>
-			</li>
-			<li align="center">
+				<p>Brown University '18 <br /> Arqueologia e Egiptologia</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/paulat.png" height="130" width="130" />
 				<h4>Paula Torres</h4>
-				<p>New York University '19 - Psicologia</p>
-			</li>
-			<li align="center">
+				<p>New York University '19 <br /> Psicologia</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/pauline.png" height="130" width="130" />
 				<h4>Pauline Siviero</h4>
-				<p>Brown University '19 - Ciência da Computação</p>
-			</li>
-			<li align="center">
+				<p>Brown University '19 <br /> Ciência da Computação</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/pedro.jpeg" height="130" width="130" />
 				<h4>Pedro Paulo Maia</h4>
-				<p>Brown University '19 - Economía e Estatística</p>
-			</li>
-			<li align="center">
+				<p>Brown University '19 <br /> Economía e Estatística</p>
+			</div>
+			<div class="col-md-2" align="center">
 				<img id="equipe_img" src="etc/equipe/raf.png" height="130" width="130" />
 				<h4>Rafael Lippert</h4>
-				<p>Brown University '21 - Neurociência</p>
-			</li>
-		</ul>
+				<p>Brown University '21 <br /> Neurociência</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="space">
