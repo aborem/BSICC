@@ -95,9 +95,13 @@ body {
 	background: transparent;
 	border: 2px solid white;
 }
+#buttoon_mob {
+	display: none;
+}
 #buttoon:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 
 /*
 -------------------------------------
@@ -258,6 +262,9 @@ P A L E S T R A N T E S  S C R E E N
 	padding-bottom: 100px;
 	background-size: cover;
 }
+#Horario_mob {
+	display: none;
+}
 .Horario h1 {
 	color: #fff;
 }
@@ -346,8 +353,36 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 */
 @media (max-width: 1000px) {
-	.welcome {
+	.header {
 		display: none;
+	}
+	.welcome {
+		height: 585px;
+	}
+	.welcome h1 {
+		font-size: 40px;
+		font-weight: 700;
+		color: #fff;
+		margin-top: 10px; /*Used to be 270*/
+	}
+	.welcome img {
+		width: 300px;
+	}
+	#buttoon {
+		display: none;
+	}
+	.welcome a {
+		font-size: 25px;
+		width: 140px;
+		height: 50px;
+		color: white;
+	}
+	#buttoon_mob {
+		display: block;
+		border-radius: 15px;
+		margin-top: 10px;
+		background: transparent;
+		border: 2px solid white;
 	}
 
 	#sob {
@@ -359,6 +394,14 @@ P A L E S T R A N T E S  S C R E E N
 	}
 
 	#Palestrantes_mob {
+		display: block;
+		padding-bottom: 20px;
+	}
+
+	#Horario {
+		display: none;
+	}
+	#Horario_mob {
 		display: block;
 	}
 
