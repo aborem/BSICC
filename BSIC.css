@@ -352,7 +352,7 @@ P A L E S T R A N T E S  S C R E E N
 -------------------------------------
 -------------------------------------
 */
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
 	.header {
 		display: none;
 	}
