@@ -388,6 +388,9 @@ P A L E S T R A N T E S  S C R E E N
 	#sob {
 		display: none;
 	}
+	#bi {
+		max-width: 330px;
+	}
 
 	#Palestrantes_reg {
 		display: none;
